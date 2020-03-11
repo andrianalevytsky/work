@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="canonical" href="https://www.andrianalevytsky.work" />
+	<meta name="robots" content="all" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i&display=swap&subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/euromaidan.css">
+	<title>Andriana Levytsky</title>
+</head>
+<body>
+<div id="padding">   </div>
+<div class="left">
+
+	<h1 class="name">
+		Andriana<br>
+		Levytsky
+	</h1>
+	<!-- <div id="designType">human centered design, printmaking, etc.</div> -->
+
+	<dir>
+		<div id="connect">
+			Connect with me
+		</div>
+		<a href="mailto:andrianalevytsky@gmail.com">email</a><br>
+		<a href="https://www.linkedin.com/in/andriana-levytsky-a34111195">linkedin</a><br>
+		<a href="https://www.instagram.com/andriana.levytsky/">instagram</a>
+	</dir>
+	
+	
+</div>
+<div class="nav-bar">
+	<div id="special"><a href="index.html">Work, </a><em> Rythms of Stl</em></div><!-- 
+
+	 --><a id="aboutMe" href="about.html">About Me</a>
+</div>
+
+<div class="right">
+
+
+		<!-- 
+		
+	 -->
+	 	<div class="bigDiv">
+			<h1 class="title">Rythms of Stl</h1><!-- 
+			 --><div class="inline">12.2019</div>
+			<hr>
+			<div class="title">Print media</div><!-- 
+			 --><div class="inline">4" x 6"</div>
+			 <div class="content">A series of twelve postcards, a stamp, and packaging highlighting St. Louis, particularly its diverse music scene and history, created in celebration of Missouri’s upcoming bicentennial in 2021. Each postcard focuses on either a different genre or a person or place prevalent to St. Louis’ music scene. The bold colors and shapes are meant to visually mimic the many sounds and rhythms of the postcard’s subjects, and the packaging of the postcards was inspired by the packaging of records and record sleeves.</div>
+
+			<div><img src="images/holding.jpg"></div>
+			 <div><img src="images/collection.jpg"></div>
+			<div><img src="images/packaging.jpg"></div>
+			<div><img src="images/packagingSep.jpg"></div>
+			<div><img src="images/jazz.gif"></div>
+
+<!-- <div class="slideshow-container">
+  <div class="mySlides1">
+  	<div class="numbertext">1 / 3</div>
+    <img src="images/holding.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+  	<div class="numbertext">2 / 3</div>
+    <img src="images/collection.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+  	<div class="numbertext">3 / 3</div>
+    <img src="images/packaging.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div> -->
+			<a id="next" href="touch.html">Next&#8594;</a>
+		</div>
+	</div>
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,230 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	padding: 0px 50px 0px 50px;
+	height: 100vh;
+	margin: 0px;
+}
+
+
+/*loading screen*/
+.preloader{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10000;
+}
+.loading {
+        animation: pulse infinite 0.5s;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        margin: auto;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+}
+ @keyframes pulse {
+        0% {
+          opacity: 0.2;
+        }
+        100% {
+          opacity: 1;
+}
+}
+
+
+#padding{
+	display: block;
+	position: fixed;
+	background-color: white;
+	height: 50px;
+	width: 100%;
+}
+a{
+	display: inline-block;
+	width: 48%;
+	margin: 1%;
+	text-decoration: none;
+	color: black;
+	font-size: 12pt;
+}
+.left a{
+	width: fit-content;
+}
+img{
+	width: 100%
+}
+h1{
+	font-size: 25pt;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+div{
+	font-weight: 400;
+}
+
+/*changes on hover for links, etc*/
+a:hover {
+font-style: italic;
+}
+.img-zoom{
+	height: 100%;
+	overflow: hidden;
+}
+.img-zoom img{
+	transition: -webkit-transform: .5s ease;
+	transition: -ms-transform .5s ease;
+	transition: transform .5s ease;
+}
+.img-zoom:hover img{
+	transform: scale(1.05);
+	opacity: 75%;
+}
+dir a:hover:before{
+	content: "\2192";
+}
+
+/*formating the layout*/
+div.left{
+	width: 25%;
+	float: left;
+	height: calc(100vh - 100px);
+	position: fixed;
+	top: 50px;
+}
+div.nav-bar{
+	width: calc(75% - 75px);
+	float: right;
+	text-transform: uppercase;
+	position: fixed;
+	right: 50px;
+	top: 50px;
+	background-color: white;
+}
+div.right{
+	width: 75%;
+	float: right;	
+	height: calc(100vh - 100px);
+	padding-top: 125px;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* make scrollbar invisible */
+}
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+/*connect with me formating*/
+dir{
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+}
+#connect{
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.design-type{
+	margin-bottom: .75em;
+}
+hr{
+	margin: .25em 0;
+}
+.right a{
+	padding-top: 25px;
+}
+p{
+	margin: 0;
+	padding: 40px;
+}
+
+
+
+
+h1.name{
+	padding: 1% 100px 1% 0;
+}
+.name:hover:after{
+	content: 'is a designer, illustrator, fine artist, website developer, etc.'
+}
+em{
+	font-weight: bold;
+}
+
+
+
+/*making it responsive*/
+
+@media(max-width: 1395px){
+	h1{
+		font-size: 20pt;
+	}
+}
+@media(max-width: 1040px){
+	.right a{
+		width: 98%
+	}	
+}
+@media(max-width: 825px){
+	div.left{
+		position: absolute;
+		top: -5000px;
+	}
+	dir{
+		top: -5000px;
+	}
+	div.right{
+		width: 100%;
+	}
+	div.nav-bar{
+		width: calc(100% - 100px);
+		position:fixed;
+		right: 50px;
+	}
+}
+@media(max-width: 550px){
+	h1{
+		font-size: 16pt;
+	}
+	body{
+		padding: 0 45px 45px 45px;
+		font-size: 11pt;
+	}
+	div.nav-bar{
+		width: calc(100% - 90px);
+		top: 45px;
+		right: 45px;
+	}
+	#aboutMe{
+			float: right;
+			width: auto;
+		}
+	#padding{
+		height: 45px;
+	}
+	div.right{
+		padding-top: 100px;
+	}
+}
+
+@media(max-width: 350px){
+	body{
+		font-size: 10pt;
+	}
+
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="canonical" href="https://www.andrianalevytsky.work" />
+	<meta name="robots" content="all" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i&display=swap&subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/euromaidan.css">
+	<title>Andriana Levytsky</title>
+</head>
+<body>
+<div id="padding">   </div>
+<div class="left">
+
+	<h1 class="name">
+		Andriana<br>
+		Levytsky
+	</h1>
+	<!-- <div id="designType">human centered design, printmaking, etc.</div> -->
+
+	<dir>
+		<div id="connect">
+			Connect with me
+		</div>
+		<a href="mailto:andrianalevytsky@gmail.com">email</a><br>
+		<a href="https://www.linkedin.com/in/andriana-levytsky-a34111195">linkedin</a><br>
+		<a href="https://www.instagram.com/andriana.levytsky/">instagram</a>
+	</dir>
+	
+	
+</div>
+<div class="nav-bar">
+	<div id="special"><a href="index.html">Work, </a><em> How it's Made</em></div><!-- 
+
+	 --><a id="aboutMe" href="about.html">About Me</a>
+</div>
+
+<div class="right">
+
+
+		<!-- 
+		
+	 -->
+	 	<div class="bigDiv">
+			<h1 class="title">How it's Made</h1><!-- 
+			 --><div class="inline">11.2019</div>
+			<hr>
+			<div class="title">Accordion, 10 pages</div><!-- 
+			 --><div class="inline">5" x 7"</div>
+			 <div class="content">A ten-page book illustrating where natural gas comes from and how it is made. The book uses a limited color pallet and relies solely on images made from ink drawings and scans of dirt in order to relay information. The vertical orientation of the pages references the motion of drilling down into the ground for natural gas.</div>
+
+			<!-- <div><img src="images/howItsMade2.gif"></div> -->
+			<div><img src="images/flippingHow.jpg"></div>
+			<div><img src="images/detailHow.jpg"></div>
+			<div><img src="images/backCover.jpg"></div>
+	<div class="slideshow-container">
+  <div class="mySlides1">
+  	<div class="numbertext">1 / 5</div>
+    <img src="images/spread1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+  	<div class="numbertext">2 / 5</div>
+    <img src="images/spread2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+  	<div class="numbertext">3 / 5</div>
+    <img src="images/spread3.jpg" style="width:100%">
+  </div>
+  <div class="mySlides1">
+  	<div class="numbertext">4 / 5</div>
+    <img src="images/spread4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+  	<div class="numbertext">5 / 5</div>
+    <img src="images/spread5.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+			
+			<a id="next" href="calendar.html">Next&#8594;</a>
+		</div>
+	</div>
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>	
+</body>
+</html>
