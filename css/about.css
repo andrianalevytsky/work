@@ -29,7 +29,7 @@ img{
 	display: inline-block;
 }
 h1{
-	font-size: 25pt;
+	font-size: 20pt;
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
@@ -114,6 +114,7 @@ dir a:hover:before{
 
 h1.name{
 	padding: 1% 100px 1% 0;
+	font-size: 25pt;
 }
 .name:hover:after{
 	content: 'is a designer, illustrator, fine artist, website developer, etc.'
@@ -145,6 +146,7 @@ h1.name{
 	vertical-align: top;
 	padding: 5%;
 	font-size: 16pt;
+	line-height: 1.5em;
 }
 em{
 	font-weight: bold;
@@ -165,8 +167,11 @@ em{
 /*making it responsive*/
 
 @media(max-width: 1395px){
-	h1{
+	h1.name{
 		font-size: 20pt;
+	}
+	h1{
+		font-size: 17pt;
 	}
 	.content{
 		font-size: 12pt;
