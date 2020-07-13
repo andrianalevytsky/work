@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="canonical" href="https://www.andrianalevytsky.work" />
+	<meta name="robots" content="all" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i&display=swap&subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/euromaidan.css">
+	<title>Andriana Levytsky</title>
+</head>
+<body>
+<div id="padding">   </div>
+<div class="left">
+
+	<a href="index.html"><h1 class="name">
+		Andriana<br>
+		Levytsky
+	</h1></a>
+	<!-- <div id="designType">human centered design, printmaking, etc.</div> -->
+
+	<dir>
+		<div id="connect">
+			Connect with me
+		</div>
+		<a href="mailto:andrianalevytsky@gmail.com">email</a><br>
+		<a href="https://www.linkedin.com/in/andriana-levytsky-a34111195">linkedin</a><br>
+		<a href="https://www.instagram.com/andriana.levytsky/">instagram</a>
+	</dir>
+	
+	
+</div>
+<div class="nav-bar">
+	<div id="special"><a href="index.html">Work, </a><em> Misc. Illustration</em></div><!-- 
+
+	 --><a id="aboutMe" href="about.html">About Me</a>
+</div>
+
+<div class="right">
+
+
+		<!-- 
+		
+	 -->
+	 	<div class="bigDiv">
+			<h1 class="title">Misc. Illustration</h1><!-- 
+			 --><div class="inline">Various Dates</div>
+			<hr>
+			<div class="title">Various Media</div><!-- 
+			 --><div class="inline">Various Sizes</div>
+			 <div class="content"> Miscellaneous drawings, sketches, and experiments.</div>
+
+			<!-- <div><img src="images/howItsMade2.gif"></div> -->
+			<div><img src="images/chilling.jpg"></div><!--
+			--><img class="half" src="images/skyline.jpg"><!--
+			--><img class="half" src="images/hallway.jpg"><!--
+			--><div><img src="images/venice.jpg"></div><!--
+			--><img class="half" src="images/trees.jpg"><!--
+			--><img class="half" src="images/church.jpg">
+
+			
+			<a id="next" href="tcf.html">Next&#8594;</a>
+		</div>
+	</div>
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>	
+</body>
+</html>
